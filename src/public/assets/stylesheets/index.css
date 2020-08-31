@@ -1,0 +1,174 @@
+/* -------------------  MOBILE  --------------------- */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  min-height: 100vh;
+}
+
+header {
+  /* header styles */
+  font-size: xx-large;
+  font-weight: bolder;
+  font-style: italic;
+  background-color: grey;
+  padding: 15px;
+  display: block;
+  border: 10px solid black;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  /* footer styles */
+  padding: 15px;
+  background-color: grey;
+  display: block;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+}
+  
+.layout {
+  padding: 0;
+  width: 100%;
+  background-image: url("../img/Background.jpg");
+  background-repeat: round;
+}
+
+.error {
+  color: rgb(255,0,0);
+  height: inherit;
+  width: inherit;
+  padding: 10px;
+  margin: 0;
+  background-color: black;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.titlle {
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.text {
+  font-weight: lighter;
+  font-size: medium;
+}
+
+.apodContent {
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+}
+
+.tabs, .layouts {
+  overflow: auto;
+  padding: auto;
+  width: inherit;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.tabButton {
+  width: calc(100% / 3);
+}
+
+.layoutButton {
+  width: calc(100% / 2);
+}
+
+.tabButton, .layoutButton{
+  background-color: #ccc;
+  text-align: center;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: auto;
+  font-size: inherit;
+  margin-bottom: 10px;
+}
+
+.tabButton:hover, .layoutButton:hover {
+  background-color: grey;
+}
+
+.tabButton.active, .layoutButton.active {
+  background-color: grey;
+}
+
+.tabButton-content, .layoutButton-content {
+  display: none;
+  padding: auto;
+  border-top: none;
+}
+
+.intro {
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 80%;
+}
+
+.manifest {
+  border-top: 1px ridge #bbb;
+  padding: 5px;
+}
+
+.inputdiv {
+  margin: 10px;
+}
+
+.photos {
+  display: flex;
+  margin: 10px;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.photos .photo-item {
+  position: relative;
+  box-sizing: border-box;
+  border: 1px dotted #FFF;
+  width: 30%;
+  overflow: auto;
+  margin: auto;
+}
+
+.photos .photo-item div {
+  margin: 0;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background: white;
+  padding: 0.8em;
+  color: black;
+  margin: 5px auto;
+  transition: ease 0.3s all;
+}
+
+.btn:hover {
+  background: #777;
+  color: #fff;
+  cursor: pointer;
+}
